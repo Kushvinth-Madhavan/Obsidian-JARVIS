@@ -9,7 +9,7 @@ from sentence_transformers import SentenceTransformer
 from chromadb.utils.embedding_functions import SentenceTransformerEmbeddingFunction
 
 # Configurations
-OBSIDIAN_VAULT = "/Users/MacbookPro/localStorage/Mastering"
+OBSIDIAN_VAULT = "/Users/MacbookPro/Library/Mobile Documents/iCloud~md~obsidian/Documents/Mastering Obsidian/"
 GITHUB_REPO = "/Users/MacbookPro/localStorage/DevDirectory/OBSIDIAN-RAG"
 MODEL_NAME = "all-MiniLM-L6-v2"
 DB_PATH = "./chroma_db"
