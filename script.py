@@ -8,7 +8,6 @@ from fastapi import FastAPI
 from sentence_transformers import SentenceTransformer
 from chromadb.utils.embedding_functions import SentenceTransformerEmbeddingFunction
 
-# Configurations
 OBSIDIAN_VAULT = "/Users/MacbookPro/Library/Mobile Documents/iCloud~md~obsidian/Documents/Mastering Obsidian/"
 GITHUB_REPO = "/Users/MacbookPro/localStorage/DevDirectory/OBSIDIAN-RAG"
 MODEL_NAME = "all-MiniLM-L6-v2"
@@ -19,7 +18,7 @@ chroma_client = chromadb.PersistentClient(DB_PATH)
 collection = chroma_client.get_or_create_collection(name="obsidian_notes", embedding_function=SentenceTransformerEmbeddingFunction(MODEL_NAME))
 embedder = SentenceTransformer(MODEL_NAME)
 
-# FastAPI Setup
+
 app = FastAPI()
 
 # GitHub Sync Function
@@ -51,7 +50,7 @@ class ObsidianEventHandler(FileSystemEventHandler):
             process_notes()
             sync_with_github()
 
-# FastAPI Route for Chatbot
+# FastAPI Shii
 @app.get("/query")
 def query_notes(query: str):
     query_embedding = embedder.encode(query).tolist()
@@ -72,7 +71,7 @@ def start_watcher():
     observer.join()
 
 if __name__ == "__main__":
-    process_notes()  # Initial Indexing
+    process_notes()  
     sync_with_github()
     start_watcher()
 
