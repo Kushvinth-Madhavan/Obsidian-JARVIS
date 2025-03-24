@@ -74,5 +74,3 @@ if __name__ == "__main__":
     process_notes()  
     sync_with_github()
     start_watcher()
-
-
