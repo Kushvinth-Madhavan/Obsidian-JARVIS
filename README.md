@@ -1,19 +1,75 @@
-# Obsidian-JARVIS
+# Obsidian JARVIS
 
-A personal AI/ML assistant powered by Obsidian.
+An AI-powered knowledge assistant that helps you search and interact with your Obsidian vault using natural language.
+
+## Project Structure
+
+```
+Obsidian-JARVIS/
+├── frontend/           # Frontend application
+│   ├── index.html     # Main HTML file
+│   ├── css/          # Stylesheets
+│   └── js/           # JavaScript files
+├── backend/           # Python backend
+│   ├── main.py       # Main application entry point
+│   ├── script.py     # Core functionality
+│   └── requirements.txt
+├── docs/             # Documentation
+└── .gitignore        # Git ignore rules
+```
 
 ## Features
 
-- AI-powered note-taking
-- Local storage for privacy
-- Integration with Obsidian plugins
+- Natural language search interface
+- Real-time search results
+- Modern, responsive UI
+- Integration with Obsidian vault
+- AI-powered knowledge retrieval
 
-## Getting Started
+## Setup Instructions
 
-1. Clone the repository.
-2. Install dependencies.
-3. Follow setup instructions in the `docs/` folder.
+### Backend Setup
+
+1. Create a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+2. Install dependencies:
+   ```bash
+   cd backend
+   pip install -r requirements.txt
+   ```
+
+3. Run the backend server:
+   ```bash
+   python main.py
+   ```
+
+### Frontend Setup
+
+1. Open `frontend/index.html` in your web browser
+2. Alternatively, serve the frontend using a local server:
+   ```bash
+   cd frontend
+   python -m http.server 8000
+   ```
+
+## Development
+
+- Frontend development: Edit files in the `frontend` directory
+- Backend development: Edit files in the `backend` directory
+- Make sure to follow the existing code style and add appropriate comments
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
 
 ## License
 
-MIT License
+MIT License - see LICENSE file for details
