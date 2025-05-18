@@ -1,4 +1,3 @@
-import os
 import time
 import git
 import chromadb
