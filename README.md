@@ -1,4 +1,4 @@
-# Obsidian JARVIS
+# OJARVIS (Obsidian JARVIS)
 
 An AI-powered knowledge assistant that helps you search and interact with your Obsidian vault using natural language.
 
